@@ -23,6 +23,10 @@ app.use('/events', require('./routes/events'));
 app.use('/reviews', require('./routes/reviews'));
 app.use('/', require('./routes/version'));
 
+const PORT = 3000
+const HOST = '0.0.0.0'
+
+
 // 🖥️ Levanta el servidor en el puerto asignado por el hosting
 app.listen(PORT, HOST, (err) => {
   if (err) {
