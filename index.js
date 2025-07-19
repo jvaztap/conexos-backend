@@ -24,7 +24,7 @@ app.use('/reviews', require('./routes/reviews'));
 app.use('/', require('./routes/version'));
 
 // 🖥️ Levanta el servidor en el puerto asignado por el hosting
-app.listen(PORT, HOST, (err) => {
+app.listen(HOST, (err) => {
   if (err) {
     throw new Error(err);
   } else {
